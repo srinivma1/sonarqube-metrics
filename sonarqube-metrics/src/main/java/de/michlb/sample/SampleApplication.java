@@ -1,14 +1,4 @@
-/*******************************************************************************
- *  OLAM CONFIDENTIAL
- *   __________________
- *   
- *   © 2018 Olam International All Rights Reserved
- *  
- *   NOTICE: All information contained herein is, and remains 
- *   the property of OLAM International and its suppliers, if any and are protected by copyright law.
- *   Dissemination of this information or reproduction of this material is strictly forbidden
- *   unless prior written permission is obtained from OLAM International.
- *******************************************************************************/
+
 package de.michlb.sample;
 
 import java.util.ArrayList;
