@@ -9,4 +9,4 @@ Demo project for displaying SonarQube metrics
 - Spring boot
 -Camel
 
-Run the sample application and it will display the sonarqube metrics(LoC) for all the projects in the dashboard.
+Run the sample application and it will print the sonarqube metrics(LoC) for all the projects in the dashboard.
