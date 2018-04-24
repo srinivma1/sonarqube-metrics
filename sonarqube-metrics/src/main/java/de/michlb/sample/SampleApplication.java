@@ -82,7 +82,7 @@ public class SampleApplication {
 			
 			from("timer://sonar?repeatCount=1").routeId("directSonar").streamCaching()
 			.removeHeaders("*")
-			.inOnly("http://localhost:9000/api/projects/index")
+			.inOnly("http://localhost:9000/sonarqube/api/projects/index")
 			.log("${body}")
 		
 				.process(new Processor() {
@@ -108,7 +108,7 @@ public class SampleApplication {
 					}).split()
 					.body().shareUnitOfWork()
 					.setHeader(Exchange.HTTP_QUERY, simple("componentKey=${body}&metricKeys=ncloc"))
-					. to("http://localhost:9000/api/measures/component")
+					. to("http://localhost:9000/sonarqube/api/measures/component")
 					.log("${body}")
 					.log("${exchangeProperty.CamelSplitComplete}")
 					
